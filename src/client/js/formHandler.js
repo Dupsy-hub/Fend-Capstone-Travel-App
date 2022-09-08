@@ -1,4 +1,4 @@
-
+async function handleSubmit() {
     // Event Listener to add function to HTML element
     document.getElementById('submit').addEventListener('click', performAction);
 
@@ -157,8 +157,8 @@
             console.log("error", error);
         }
        
-    }
+        }
 
-};
-    
+    }
+}    
     export { handleSubmit }
