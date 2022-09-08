@@ -11,27 +11,27 @@
 <body>
   <header>
     <h1>Travel Planner - Plan Your Next Trip</h1>
-    <div class="intro">"Are you travelling? Let's be your personal travel assistant. With Travel Planner you can plan
+    <div class="intro">"Are you <span class="emphasized">travelling</span>? Let's be your personal travel assistant. With Travel Planner you can plan
       your next trip and get the best out of it."
+      <div class="container">
+          <div id="left-box">
+            <img class = "logo" src="media\architecture-3363159_640.jpg/" alt="image" style="width:50%;" />
+            <div class="top-right"><h2>EXPLORE!!!</h2></div>
+          </div>  
+        </div>  
     </div>
   </header>
-  <div class="container">
-    <div id="left-box">
-      <img id = "pic" src="media/architecture-3363159_640.jpg/" alt="image" style="width:50%;" />
-    </div>  
-    <div class="top-right">
-        <h2>EXPLORE!!!</h2>      
-    </div>
-    <div id=" right-box">
-    </div>
+
+    <div id=" right-box">    
     <h2>My Trips:</h2>
     <form class = "entry_holder_form" onsubmit="return Client.handleSubmit(event)">
       <label for="location">My trip to</label>
       <input type="text" id="location" placeholder="enter destination here">
       <label for="departureDate">Departing on</label>
       <input type="text" id="departure" placeholder="dd/mm/yyyy" rows="9" cols="50"></textarea>
-      <button type="button" id="submit" type="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">Submit</button>
-    </form>      
+      <input type="button" id="submit" placeholder="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+    </form>
+  </div>      
       <div class="buttons">
         <button id ="saveButton" type="Submit">Save Trip</button>
         <button id ="removeButton" type="Submit">Remove Trip</button>

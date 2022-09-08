@@ -1,7 +1,3 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
 
 #app{
     display: grid;
@@ -54,12 +50,16 @@ body{
     font-style: bold;
 
 }
+.intro{
+    font-size: 1.3em;
+}
+.emphasized{
+    font-style: italic;
+    color: #f23557;
+}
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
 
-h1{
-    font-size: 50px;
-}
 
 textarea{
     background:#22b2da;
