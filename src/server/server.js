@@ -27,7 +27,7 @@ const cors = require("cors");
 app.use(cors({}));
 
 // Setup Server
-const port = 8000;
+const port = 8080;
 // Spin up the Server
 // const server = app.listen(port, ()=>{console.log(`running on localhost: ${port}`)})
 //Callback to debug
