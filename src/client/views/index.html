@@ -5,55 +5,56 @@
   <meta charset="UTF-8">
   <title>Travel Planner</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <h1>Travel Planner - Plan Your Next Trip</h1>
-    <div class="intro">"Are you <span class="emphasized">travelling</span>? Let's be your personal travel assistant. With Travel Planner you can plan
+    <div class="intro">"Are you <span class="emphasized">travelling</span>? Let's be your personal travel assistant.
+      With Travel Planner you can plan
       your next trip and get the best out of it."
       <div class="container">
-          <div id="left-box">
-            <img class = "logo" src="media\architecture-3363159_640.jpg/" alt="image" style="width:50%;" />
-            <div class="top-right"><h2>EXPLORE!!!</h2></div>
-          </div>  
-        </div>  
+        <div id="left-box">
+          <div class="top-right">
+            <h2 id="explore">EXPLORE!!!</h2>
+          </div>
+        </div>
+        <div id="right-box">
+          <h2>My Trips:</h2>
+          <form class="entry_holder_form" onsubmit="return Client.handleSubmit(event)">
+            <label for="location">My trip to</label>
+            <input type="text" id="location" placeholder="enter destination here">
+            <label for="departureDate">Departing on</label>
+            <input type="date" id="departure" />
+            <input type="button" id="submit" placeholder="submit" value="Submit"
+              onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+          </form>
+          <div class="buttons">
+            <button id="saveButton" type="submit">Save Trip</button>
+            <button id="removeButton" type="submit">Remove Trip</button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
+  </div>
 
-    <div id=" right-box">    
-    <h2>My Trips:</h2>
-    <form class = "entry_holder_form" onsubmit="return Client.handleSubmit(event)">
-      <label for="location">My trip to</label>
-      <input type="text" id="location" placeholder="enter destination here">
-      <label for="departureDate">Departing on</label>
-      <input type="text" id="departure" placeholder="dd/mm/yyyy" rows="9" cols="50"></textarea>
-      <input type="button" id="submit" placeholder="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
-    </form>
-  </div>      
-      <div class="buttons">
-        <button id ="saveButton" type="Submit">Save Trip</button>
-        <button id ="removeButton" type="Submit">Remove Trip</button>
-      </div>
-    </div>      
-    
-<section id = "results__container">
-  <div>
+  <section id="results__container">
+    <div>
       <div id="date"></div>
-      <div id ="title"></div>
+      <div id="location"></div>
       <div id="temp_high"></div>
       <div id="temp_low"></div>
-      <img id ="dest_pic" src =""  alt = "destination image" width="45" height="45">
-    
-  </div> 
-</section>
-<footer>
-  <p>copyright Dupsy-hub for Udacity</p>
-</footer>
-<script type="text/javascript" src="../../../dist/main.js"></script>
+      <img id="dest_pic" src="" alt="">
+
+    </div>
+  </section>
+  <footer>
+    <p>copyright Dupsy-hub for Udacity</p>
+  </footer>
+  <script type="text/javascript" src="../../../dist/main.js"></script>
 
 </body>
+
 </html>
-
-

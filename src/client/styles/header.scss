@@ -16,7 +16,13 @@ h1{
     font-size: 50px;
 }
 h2{
-    font-size:30px;
+    font-size:20px;
+    
+}
+
+#explore {
+    color: rgb(255, 0, 0);
+    font-style: italic;
 }
 
 textarea{
@@ -26,12 +32,11 @@ textarea{
     font-family: 'Oswald', sans-serif;
 }
 .container{
-    background-image:"https://pixabay.com/photos/architecture-travel-old-city-3363159.jpg";
     position: relative;
     text-align: center;
+    display: flex;
 }
-.top-right{
-    position: absolute;
-    top: 8px;
-    right: 16px;
+#left-box {
+    min-width: 50%;
+    margin-right: 10%;
 }
